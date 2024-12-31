@@ -1,0 +1,10 @@
+variable "region" {}
+variable "vpc_cidr" {}
+variable "public_subnet_cidrs" {}
+variable "private_subnet_cidrs" {}
+variable "eks_cluster_name" {}
+variable "node_instance_type" {}
+variable "desired_size" {}
+variable "min_size" {}
+variable "max_size" {}
+variable "kubernetes_version" {}

@@ -1,0 +1,9 @@
+pipelines:
+  default:
+    - step:
+        name: Deploy Infrastructure
+        image: hashicorp/terraform:latest
+        script:
+          - terraform init
+          - terraform plan
+          - terraform apply -auto-approve

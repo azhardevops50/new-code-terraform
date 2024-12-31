@@ -1,0 +1,20 @@
+📁 project-root/
+  ├── 📁 infrastructure/
+  │     ├── infra.tf         # VPC, Subnets, NAT, IGW, Route Tables
+  │     ├── eks.tf           # EKS Cluster and Node Groups
+  │     ├── ecr.tf           # ECR repository setup
+  │     ├── iam.tf           # IAM Roles and Policies
+  │     ├── variables.tf     # All shared variables
+  │     ├── outputs.tf       # Outputs for resources
+  │
+  ├── 📁 applications/
+  │     ├── 📁 ocr/
+  │     │     ├── main.tf          # Kubernetes deployment, service, secrets
+  │     │     ├── variables.tf     # Variables specific to this application
+  │     │     ├── outputs.tf       # Outputs for this app
+  │     │
+  │
+  ├── 📄 terraform.tfvars     # Environment-specific values
+  ├── 📄 backend.tf           # S3 backend for storing the state file
+  ├── 📄 providers.tf         # Provider configurations (AWS, Kubernetes)
+  ├── 📄 versions.tf          # Specifies provider and Terraform versions
